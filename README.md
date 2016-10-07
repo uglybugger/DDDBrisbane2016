@@ -2,7 +2,7 @@
 
 ## "Send me a pull request during this talk!"
 
-### Audience participation repository for the [DDD Brisbane 2016](http://dddbrisbane.com/) conference.
+### Audience participation repository for the "Industrial-grade continuous delivery" session at the [DDD Brisbane 2016](http://dddbrisbane.com/) conference.
 
 Everyone talks about continuous delivery, and almost everyone talks about how it’s “nice in theory but wouldn’t work here because reasons.” This talk is about that talk, and why that talk is wrong. Continuous delivery works - and works well, even (especially) for large, complex systems - but requires an engineering discipline that many organisations seem to think is beyond them.
 
