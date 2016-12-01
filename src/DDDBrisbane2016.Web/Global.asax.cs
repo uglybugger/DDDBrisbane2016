@@ -38,6 +38,7 @@ namespace DDDBrisbane2016.Web
                 .Enrich.With<HttpRequestUrlReferrerEnricher>()
                 .Enrich.With<HttpRequestUserAgentEnricher>()
                 .CreateLogger();
+            Log.Information("Logger online");
 
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
@@ -50,6 +51,8 @@ namespace DDDBrisbane2016.Web
 
         protected void Application_End()
         {
+            Log.Information("Application shutting down");
+
             _container?.Dispose();
             _container = null;
         }
