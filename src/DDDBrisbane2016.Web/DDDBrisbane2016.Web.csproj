@@ -68,6 +68,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MvcNavigationHelpers, Version=0.0.0.5, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvcNavigationHelpers.0.0.0.5\lib\net45\MvcNavigationHelpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
@@ -140,7 +144,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="SlideShow\AndrewsSlideSequence.cs" />
     <Compile Include="SlideShow\SlideNameSequence.cs" />
-    <Compile Include="Areas\Slideshow\Controllers\SlideshowController.cs" />
+    <Compile Include="Areas\Slideshow\Controllers\PresentController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -164,9 +168,9 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Areas\Slideshow\Views\web.config" />
-    <Content Include="Areas\Slideshow\Views\Shared\_ViewStart.cshtml" />
+    <Content Include="Areas\Slideshow\_ViewStart.cshtml" />
     <Content Include="Areas\Slideshow\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Slideshow\Web.config" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -197,8 +201,8 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Areas\Slideshow\Views\HowToPlay.cshtml" />
-    <Content Include="Areas\Slideshow\Views\ThankYou.cshtml" />
+    <Content Include="Areas\Slideshow\Views\Present\HowToPlay.cshtml" />
+    <Content Include="Areas\Slideshow\Views\Present\ThankYou.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

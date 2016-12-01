@@ -1,5 +1,19 @@
-﻿foo
+﻿@using DDDBrisbane2016.Web.Areas.Slideshow.Controllers
+@using MvcNavigationHelpers
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
 @RenderBody()
 
-bar
+<hr/>
+<div class="row">
+    <div class="col-xs-1">
+        <a class="btn btn-primary" style="float: left;" href="@(Url.UrlFor<PresentController>(c => c.Previous()))">Previous</a>
+    </div>
+    <div class="col-xs-10">
+    </div>
+    <div class="col-xs-1">
+        <a class="btn btn-primary" style="float: right;" href="@(Url.UrlFor<PresentController>(c => c.Next()))">Next &raquo;</a>
+    </div>
+</div>

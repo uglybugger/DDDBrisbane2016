@@ -1,16 +1,19 @@
 ﻿using System.Linq;
 using System.Web.Mvc;
 using DDDBrisbane2016.Web.SlideShow;
+using MvcNavigationHelpers;
 
 namespace DDDBrisbane2016.Web.Areas.Slideshow.Controllers
 {
-    public class SlideshowController : Controller
+    public class PresentController : Controller
     {
         private readonly AndrewsSlideSequence _slideSequence;
+        private readonly UrlHelper _urlHelper;
 
-        public SlideshowController(AndrewsSlideSequence slideSequence)
+        public PresentController(AndrewsSlideSequence slideSequence, UrlHelper urlHelper)
         {
             _slideSequence = slideSequence;
+            _urlHelper = urlHelper;
         }
 
         [HttpGet]
@@ -69,7 +72,8 @@ namespace DDDBrisbane2016.Web.Areas.Slideshow.Controllers
 
         private RedirectResult RedirectToSlide(string slideName)
         {
-            return Redirect($"/slideshow/display/{slideName}");
+            var url = _urlHelper.UrlFor<PresentController>(c => c.Display(slideName));
+            return Redirect(url);
         }
     }
 }
