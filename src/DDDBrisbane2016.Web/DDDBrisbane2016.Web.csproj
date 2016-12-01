@@ -221,6 +221,7 @@
     <Content Include="Areas\Slideshow\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Slideshow\Web.config" />
     <Content Include="Areas\Slideshow\Views\Present\AboutMe.cshtml" />
+    <Content Include="Areas\Slideshow\Views\Present\StyleMe.cshtml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
