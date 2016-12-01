@@ -1,4 +1,6 @@
-﻿@{
+﻿@using DDDBrisbane2016.Web.Areas.Slideshow.Controllers
+@using MvcNavigationHelpers
+@{
     ViewBag.Title = "Welcome";
 }
 
@@ -15,7 +17,7 @@
     </p>
 
     <p>
-        <a href="/slideshow/start" class="btn btn-primary btn-lg">Next &raquo;</a>
+        <a href="@(Url.UrlFor<PresentController>(c => c.Start()))" class="btn btn-primary btn-lg">Start &raquo;</a>
     </p>
 </div>
 
