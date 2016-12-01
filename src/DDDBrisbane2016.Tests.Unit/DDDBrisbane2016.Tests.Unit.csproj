@@ -38,6 +38,10 @@
       <HintPath>..\packages\NUnit.3.5.0\lib\net45\nunit.framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Shouldly, Version=2.8.2.0, Culture=neutral, PublicKeyToken=6042cbcb05cbc941, processorArchitecture=MSIL">
+      <HintPath>..\packages\Shouldly.2.8.2\lib\net451\Shouldly.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,11 +53,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblySetUp.cs" />
+    <Compile Include="SlideNameSequenceTests\OneElement\GivenASequenceWithOneElement.cs" />
+    <Compile Include="SlideNameSequenceTests\OneElement\WhenRequestingTheFirstElement.cs" />
+    <Compile Include="SlideNameSequenceTests\OneElement\WhenRequestingTheNextElement.cs" />
+    <Compile Include="SlideNameSequenceTests\OneElement\WhenRequestingThePreviousElement.cs" />
+    <Compile Include="SlideNameSequenceTests\SeveralElements\GivenASequenceWithThreeElements.cs" />
+    <Compile Include="SlideNameSequenceTests\UnitTest.cs" />
     <Compile Include="WhenTheTestHarnessRuns.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DDDBrisbane2016.Web\DDDBrisbane2016.Web.csproj">
+      <Project>{F3FD019C-3DF5-44F9-B8F5-2A88D4D3E1CD}</Project>
+      <Name>DDDBrisbane2016.Web</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
