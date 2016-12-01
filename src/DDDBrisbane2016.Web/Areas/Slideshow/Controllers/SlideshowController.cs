@@ -2,7 +2,7 @@
 using System.Web.Mvc;
 using DDDBrisbane2016.Web.SlideShow;
 
-namespace DDDBrisbane2016.Web.Controllers
+namespace DDDBrisbane2016.Web.Areas.Slideshow.Controllers
 {
     public class SlideshowController : Controller
     {

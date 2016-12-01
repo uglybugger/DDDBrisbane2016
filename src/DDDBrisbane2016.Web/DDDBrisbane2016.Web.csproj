@@ -134,12 +134,13 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Slideshow\SlideshowAreaRegistration.cs" />
     <Compile Include="AutofacModules\MvcModule.cs" />
     <Compile Include="AutofacModules\SlideShowModule.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="SlideShow\AndrewsSlideSequence.cs" />
     <Compile Include="SlideShow\SlideNameSequence.cs" />
-    <Compile Include="Controllers\SlideshowController.cs" />
+    <Compile Include="Areas\Slideshow\Controllers\SlideshowController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -163,6 +164,9 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Areas\Slideshow\Views\web.config" />
+    <Content Include="Areas\Slideshow\Views\Shared\_ViewStart.cshtml" />
+    <Content Include="Areas\Slideshow\Views\Shared\_Layout.cshtml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -193,11 +197,12 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Slideshow\HowToPlay.cshtml" />
-    <Content Include="Views\Slideshow\ThankYou.cshtml" />
+    <Content Include="Areas\Slideshow\Views\HowToPlay.cshtml" />
+    <Content Include="Areas\Slideshow\Views\ThankYou.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Slideshow\Models\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
