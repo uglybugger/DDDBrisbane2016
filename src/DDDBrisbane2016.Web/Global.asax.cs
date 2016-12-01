@@ -57,18 +57,6 @@ namespace DDDBrisbane2016.Web
             _container = null;
         }
 
-        protected void Application_BeginRequest()
-        {
-            var request = HttpContext.Current.Request;
-            Log.Verbose("Beginning HTTP {HttpMethod} to {HttpRequestUrl}", request.HttpMethod, request.Url);
-        }
-
-        protected void Application_EndRequest()
-        {
-            var request = HttpContext.Current.Request;
-            Log.Verbose("Completed HTTP {HttpMethod} to {HttpRequestUrl}", request.HttpMethod, request.Url);
-        }
-
         protected void Application_Error()
         {
             var exception = Server.GetLastError();

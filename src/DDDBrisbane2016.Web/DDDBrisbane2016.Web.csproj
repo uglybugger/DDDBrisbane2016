@@ -55,6 +55,10 @@
       <HintPath>..\packages\Autofac.Mvc5.4.0.0\lib\net451\Autofac.Integration.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="AutofacSerilogIntegration, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutofacSerilogIntegration.1.0.12\lib\portable45-net45+win8+wp8+wpa81\AutofacSerilogIntegration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="ConfigInjector, Version=2.2.1175.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ConfigInjector.2.2.1175.0\lib\net45\ConfigInjector.dll</HintPath>
       <Private>True</Private>
@@ -165,13 +169,17 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="ThirdDrawer, Version=1.1.9.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThirdDrawer.1.1.9.0\lib\net40\ThirdDrawer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActionFilters\RequestLoggingActionFilter.cs" />
+    <Compile Include="ActionFilters\MvcRequestLoggingActionFilterAttribute.cs" />
     <Compile Include="AppSettings\LogEventLevel.cs" />
     <Compile Include="AppSettings\SeqApiKey.cs" />
     <Compile Include="AppSettings\SeqServerUri.cs" />
@@ -179,6 +187,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Slideshow\SlideshowAreaRegistration.cs" />
+    <Compile Include="AutofacModules\LoggerModule.cs" />
     <Compile Include="AutofacModules\MvcModule.cs" />
     <Compile Include="AutofacModules\SlideShowModule.cs" />
     <Compile Include="Controllers\HomeController.cs" />
