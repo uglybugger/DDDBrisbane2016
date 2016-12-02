@@ -15,6 +15,7 @@ namespace DDDBrisbane2016.Web.SlideShow
             "Test",
             "Configuration",
             "RealTimeFeatureToggles",
+            "CanaryBuilds",
             "Cleanup",
             "ThankYou"
             )

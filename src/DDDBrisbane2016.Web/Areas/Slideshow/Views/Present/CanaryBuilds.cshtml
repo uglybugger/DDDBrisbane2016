@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Canary builds";
+}
+
+<h1>Canary builds!</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Nightly canary builds...</h2>
+        <ol>
+            <li>Clone master</li>
+            <li>Update packages</li>
+            <li>Compile the code</li>
+            <li>Run the unit tests</li>
+            <li>Create a branch</li>
+        </ol>
+    </div>
+
+    <div class="col-md-4">
+        <h2>... trigger CI branch builds...</h2>
+        <ol>
+            <li>Clone the branch</li>
+            <li>Compile, test, deploy, test</li>
+            <li>Merge down to master</li>
+        </ol>
+    </div>
+
+    <div class="col-md-4">
+        <h2>... which triggers a CI master build</h2>
+        <ol>
+            <li>Clone master</li>
+            <li>Compile, test, deploy, test</li>
+            <li>Deploy to staging</li>
+            <li><strong>Promote to production</strong></li>
+        </ol>
+    </div>
+</div>

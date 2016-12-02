@@ -233,6 +233,7 @@
     <Content Include="Areas\Slideshow\Views\Present\Configuration.cshtml" />
     <Content Include="Areas\Slideshow\Views\Present\RealTimeFeatureToggles.cshtml" />
     <Content Include="Areas\Slideshow\Views\Present\Cleanup.cshtml" />
+    <Content Include="Areas\Slideshow\Views\Present\CanaryBuilds.cshtml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
