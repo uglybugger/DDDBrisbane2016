@@ -6,6 +6,7 @@ namespace DDDBrisbane2016.Web.SlideShow
             "Welcome",
             "WelcomeAka",
             "AboutMe",
+            "Sponsors",
             "HowToPlay",
             "StyleMe",
             "Principles",
