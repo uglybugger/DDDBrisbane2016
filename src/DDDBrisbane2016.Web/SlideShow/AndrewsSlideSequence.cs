@@ -20,7 +20,7 @@ namespace DDDBrisbane2016.Web.SlideShow
             "CanaryBuilds",
             "Cleanup",
             "ThankYou",
-            "Feedbacl"
+            "Feedback"
             )
         {
         }
