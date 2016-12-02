@@ -1,4 +1,6 @@
-﻿using System.Web;
+﻿using System;
+using System.Diagnostics;
+using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
@@ -8,6 +10,7 @@ using ConfigInjector.QuickAndDirty;
 using DDDBrisbane2016.Web.AppSettings;
 using Serilog;
 using Serilog.Core;
+using SerilogWeb.Classic;
 using SerilogWeb.Classic.Enrichers;
 
 namespace DDDBrisbane2016.Web
@@ -18,14 +21,23 @@ namespace DDDBrisbane2016.Web
 
         protected void Application_Start()
         {
+            //TODO Extract logger configuration (during presentation)
             var seqServerUri = DefaultSettingsReader.Get<SeqServerUri>();
             var seqApiKey = DefaultSettingsReader.Get<SeqApiKey>();
             var logEventLevel = DefaultSettingsReader.Get<LogEventLevel>();
             var logLevelSwitch = new LoggingLevelSwitch(logEventLevel);
+            var appPoolId = Environment.GetEnvironmentVariable("APP_POOL_ID", EnvironmentVariableTarget.Process);
+
+            ApplicationLifecycleModule.RequestLoggingLevel = Serilog.Events.LogEventLevel.Verbose;
+
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.ControlledBy(logLevelSwitch)
                 .WriteTo.Seq(seqServerUri.ToString(), apiKey: seqApiKey, controlLevelSwitch: logLevelSwitch)
                 .Enrich.FromLogContext()
+                .Enrich.WithProperty("ApplicationName", typeof(MvcApplication).Assembly.GetName().Name)
+                .Enrich.WithProperty("ApplicationVersion", typeof(MvcApplication).Assembly.GetName().Version)
+                .Enrich.WithProperty("ApplicationPool", appPoolId)
+                .Enrich.WithProperty("ProcessName", Process.GetCurrentProcess().ProcessName)
                 .Enrich.WithMachineName()
                 .Enrich.WithProcessId()
                 .Enrich.WithThreadId()

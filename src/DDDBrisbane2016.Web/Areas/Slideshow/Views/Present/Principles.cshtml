@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Principles";
+}
+
+<h1>General principles</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Build every branch and every pull request</h2>
+        <p>
+            Every branch gets built and deployed to a CI environment on every push and every night.
+        </p>
+    </div>
+    <div class="col-md-6">
+        <h2>Continuous integration</h2>
+        <p>
+            I.e. not just continuous builds.
+        </p>
+        <p>
+            We merge to master frequently - and often before our feature is done.
+        </p>
+        <p>
+            We use feature toggles to enable/disable/tune features before they're ready for prime-time
+            and, in many cases, for business-as-usual operations.
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <h2>Green builds promote automatically</h2>
+        <p>
+            When master or a hotfix branch is green, out the door it goes.
+        </p>
+        <p>
+            We trust our test suite :)
+        </p>
+    </div>
+    <div class="col-md-6">
+        <h2>Canary builds</h2>
+        <p>
+            Packages auto-update every night and ship to production.
+        </p>
+    </div>
+</div>

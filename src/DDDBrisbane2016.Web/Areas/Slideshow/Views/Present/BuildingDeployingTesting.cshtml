@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Building, deploying and testing branches and pull requests";
+}
+
+<h1>Building, deploying and testing</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Building</h2>
+        <p>
+            Building each branch is easy - just wire up TeamCity and away we go.
+        </p>
+        <p>
+            We run our unit and convention tests at this stage, too, then package and push to Octopus.
+        </p>
+    </div>
+
+    <div class="col-md-4">
+        <h2>Deploying</h2>
+        <p>
+            Deploy each branch and PR to its own hostname with its own supporting infrastructure (databases etc).
+        </p>
+        <p>
+            We use DNS wildcards to pseudo-dynamically provision host names.
+        </p>
+    </div>
+
+    <div class="col-md-4">
+        <h2>Testing</h2>
+        <p>
+            We run our integration tests against the deployed code - for every branch and every pull request.
+        </p>
+        <p>
+            This requires some trickery with TeamCity and Octopus variables.
+        </p>
+    </div>
+</div>

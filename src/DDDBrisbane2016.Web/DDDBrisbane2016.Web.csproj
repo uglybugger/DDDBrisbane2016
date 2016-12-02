@@ -222,6 +222,16 @@
     <Content Include="Areas\Slideshow\Web.config" />
     <Content Include="Areas\Slideshow\Views\Present\AboutMe.cshtml" />
     <Content Include="Areas\Slideshow\Views\Present\StyleMe.cshtml" />
+    <Content Include="Areas\Slideshow\Views\Present\BuildingDeployingTesting.cshtml" />
+    <Content Include="Areas\Slideshow\Views\Present\Principles.cshtml" />
+    <Content Include="Areas\Slideshow\Views\Present\Welcome.cshtml" />
+    <Content Include="Areas\Slideshow\Views\Present\Build.cshtml" />
+    <Content Include="Areas\Slideshow\Views\Present\Deploy.cshtml" />
+    <Content Include="Areas\Slideshow\Views\Present\Test.cshtml" />
+    <Content Include="Areas\Slideshow\Views\Present\DeployCaveats.cshtml" />
+    <Content Include="Areas\Slideshow\Views\Present\Configuration.cshtml" />
+    <Content Include="Areas\Slideshow\Views\Present\RealTimeFeatureToggles.cshtml" />
+    <Content Include="Areas\Slideshow\Views\Present\Cleanup.cshtml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -251,7 +261,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Areas\Slideshow\Views\Present\HowToPlay.cshtml" />
     <Content Include="Areas\Slideshow\Views\Present\ThankYou.cshtml" />
   </ItemGroup>

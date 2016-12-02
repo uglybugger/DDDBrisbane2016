@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Deploying";
+}
+
+<h1>Deploy all the things!</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Where do you want to deploy to today?</h2>
+        <ul>
+            <li>Today, we're deploying to an Azure VM running IIS. YMMV.</li>
+        </ul>
+    </div>
+
+    <div class="col-md-4">
+        <h2>Let's have a look at Octopus</h2>
+        <ul>
+            <li>Variable sets</li>
+            <li>Channels for DNS prefixes</li>
+            <li>Auto-promote lifecycles</li>
+        </ul>
+    </div>
+
+    <div class="col-md-4">
+        <h2>Let's have a look at Cloudflare</h2>
+        <ul>
+            <li>Wildcard CNAME record for *.demo.uglybugger.org</li>
+            <li>Optional CNAME records for *.appname.demo.uglybugger.org to farm out different apps</li>
+        </ul>
+    </div>
+</div>
