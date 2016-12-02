@@ -4,6 +4,7 @@ namespace DDDBrisbane2016.Web.SlideShow
     {
         public AndrewsSlideSequence() : base(
             "Welcome",
+            "WelcomeAka",
             "AboutMe",
             "HowToPlay",
             "StyleMe",
