@@ -237,6 +237,7 @@
     <Content Include="Areas\Slideshow\Views\Present\CanaryBuilds.cshtml" />
     <Content Include="Areas\Slideshow\Views\Present\WelcomeAka.cshtml" />
     <Content Include="Areas\Slideshow\Views\Present\Sponsors.cshtml" />
+    <Content Include="Areas\Slideshow\Views\Present\Feedback.cshtml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

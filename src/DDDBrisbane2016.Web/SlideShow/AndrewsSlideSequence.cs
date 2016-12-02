@@ -19,7 +19,8 @@ namespace DDDBrisbane2016.Web.SlideShow
             "RealTimeFeatureToggles",
             "CanaryBuilds",
             "Cleanup",
-            "ThankYou"
+            "ThankYou",
+            "Feedbacl"
             )
         {
         }
