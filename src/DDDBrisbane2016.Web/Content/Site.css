@@ -25,4 +25,7 @@ textarea {
     max-width: 280px;
 }
 
+.jumbotron {
+  background-color: black;
+}
 
