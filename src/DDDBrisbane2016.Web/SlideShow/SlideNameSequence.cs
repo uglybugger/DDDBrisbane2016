@@ -12,7 +12,7 @@ namespace DDDBrisbane2016.Web.SlideShow
         {
             if (slideNames.Length == 0) throw new ArgumentException(nameof(slideNames));
 
-            _slideNames = slideNames.ToList();
+            _slideNames = slideNames.Distinct().ToList();
         }
 
         public string GetFirst()
