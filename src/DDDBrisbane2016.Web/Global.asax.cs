@@ -67,6 +67,8 @@ namespace DDDBrisbane2016.Web
 
             _container?.Dispose();
             _container = null;
+
+            Log.CloseAndFlush();
         }
 
         protected void Application_Error()
