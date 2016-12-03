@@ -1,3 +1,5 @@
+# STEFAN SEDICH IS THE BEST!
+
 # Audience participation: industrial-grade continuous delivery
 
 ## "Send me a pull request during this talk!"
